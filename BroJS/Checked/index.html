@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checked Property</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        font-size: 10px;
+      }
+      #container {
+        background-color: rgba(0, 0, 0, 0.904);
+        color: #fff;
+        padding: 30px;
+        font-family: "Raleway", sans-serif;
+        font-size: 2rem;
+      }
+
+      p {
+        margin-top: 50px;
+        font-size: 22px;
+      }
+
+      #submit {
+        font-size: 18px;
+        padding: 4px 10px;
+        border-radius: 3px;
+        border: 2px solid #fff;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <label for="subscribe">
+        <input type="checkbox" name="checkbox" id="subscribe" />
+        Subscribe</label
+      >
+      <br />
+      <br />
+      <br />
+      <label for="paypal">
+        <input type="radio" name="payment" id="paypal" /> Paypal </label
+      ><br /><br />
+      <label for="rupay">
+        <input type="radio" name="payment" id="rupay" />Rupay </label
+      ><br /><br />
+      <label for="master">
+        <input type="radio" name="payment" id="master" />
+        MasterCard</label
+      ><br /><br />
+      <label for="visa">
+        <input type="radio" name="payment" id="visa" /> Visa
+      </label>
+      <br /><br />
+      <input type="submit" name="submit" id="submit" />
+      <div id="result">
+        <p id="check-subscibe"></p>
+        <p id="check-payment"></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

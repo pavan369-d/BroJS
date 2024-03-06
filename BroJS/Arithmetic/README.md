@@ -1,0 +1,3 @@
+# JS Practice
+
+## Mini Projects

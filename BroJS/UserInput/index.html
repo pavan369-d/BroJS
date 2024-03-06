@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INPUT</title>
+  </head>
+  <body>
+    <h1 id="myh1"></h1>
+    <label for="name">Name: <input type="text" id="name" /></label>
+    <button>Click</button>
+    <script>
+      let username;
+      //username = window.prompt("Your name");
+      let btn = document.querySelector("button");
+      btn.onclick = function () {
+        username = document.getElementById("name").value;
+        document.getElementById("myh1").textContent = `Hello ${username}`;
+      };
+    </script>
+  </body>
+</html>
